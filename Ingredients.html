@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+	<title>Ingredients</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html{
+			font-size: 10px;
+			font-family: Tahoma: sans-serif;
+		}
+		a{
+			text-align: center;
+		}
+		section{
+			width: 100%;
+			height: 100vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #E73C7E, #23A6D5, #23D5AB, #EE7752);
+			background-size: 400% 400%;
+			position: relative;
+			animation: change 10s ease-in-out infinite;
+		}
+		h1{
+			font-size: 5rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border: 3px solid #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -200%);
+			padding: 5rem 10rem;
+		}
+		.help{
+			letter-spacing: 2px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -30%);
+			padding: 5rem 10rem;
+			font-size: 30px;
+		}
+		p{
+			letter-spacing: 2px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -150%);
+			padding: 5rem 10rem;
+			font-size: 30px;
+		}
+		@keyframes change {
+			0%{
+				background-position: 0 50%;
+			}
+			50%{
+				background-position: 100% 50%;
+			}
+			100%{
+				background-position: 0 50%;
+			}
+		}
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		}
+		.nav-links{
+			flex: 1;
+			text-align: center;
+		}
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.nav-links ul li a{
+			color: #31BC7D;
+			text-decoration: none;
+			font-size: 25px;
+		}
+		.nav-links ul li::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.nav-links ul li:hover::after{
+			width: 100%;
+	</style>
+</head>
+<body>
+	<body style="background-color: rgba(0, 200, 200, .5);">
+	<nav>
+			<div class="nav-links">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Ingredients.html">Ingredients</a></li>
+					<li><a href="Directions.html">Directions</a></li>
+					<li><a href="Allergy.html">Allergy</a></li>
+				</ul>
+			</div>
+		</nav>
+	<section>
+		<h1>Ingredients</h1>
+		<p>The Ingredients are</p>
+		<ul class="help">
+			<li>Sriracha</li>
+			<li>kimchi</li>
+			<li>sesame seeds</li>
+			<li>crumbled bacon</li>
+			<li>nori (dried seaweed)</li>
+			<li>fresh herbs (cilantro, Thai basil, chives)</li>
+			<li>a drizzle of toasted sesame oil</li>
+			<li>crushed chiles</li>
+			<li>furikake</li>
+			<li>a wedge of lime</li>
+		</ul>
+
+	</section>
+
+</body>
+</html>

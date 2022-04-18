@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Food Website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			font-family: 'Gideon Roman', cursive;
+			color: #23A65D;
+		}
+		.center{
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+		p{
+			font-family: arial, monospace;
+			text-align: center;
+			color: #23A65D;
+		}
+		li {
+			font-family: Tahoma: sans-serif;
+		}
+		a{
+			text-align: center;
+		}
+		.header{
+			min-height: 120vh;
+			width: 100%;
+			background-image: url(Unknown-34.jpeg);
+			background-position: center;
+			background-size: cover;
+			position: relative;
+		}
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		}
+		.nav-links{
+			flex: 1;
+			text-align: center;
+		}
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.nav-links ul li a{
+			color: #31BC7D;
+			text-decoration: none;
+			font-size: 25px;
+		}
+		.nav-links ul li::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.nav-links ul li:hover::after{
+			width: 100%;
+		}
+		.text-box{
+			width: 80%;
+			color: black;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-200%);
+			text-align: center;
+			border-radius: 10%;
+			background: maroon;
+		}
+		.text-box h1{
+			font-size: 60px;
+		}
+		.text-box p{
+			margin: 10px 0 40px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body style="background-color: rgba(0, 200, 200, .5);">
+	<h1>Ramen Noodles.</h1>
+	<nav>
+			<div class="nav-links">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Ingredients.html">Ingredients</a></li>
+					<li><a href="Directions.html">Directions</a></li>
+					<li><a href="Allergy.html">Allergy</a></li>
+				</ul>
+			</div>
+		</nav>
+	<section class ="header">
+		<div class="text-box">
+			<h1>Why I Chose Ramen Noodles</h1>
+			<p>Ramen Noodles are my favorite food (not the instant ramen, but the stuff that originated from Japan.) Is it bad for you? Yea. Will that stop me from eating it? No. It’s just something I need to do. Got to prove to people that you can’t sleep on Ramen Noodles!</p>
+		</div>
+	</section>
+	

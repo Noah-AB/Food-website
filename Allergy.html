@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+	<title>Allergy</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html{
+			font-size: 10px;
+			font-family: Tahoma: sans-serif;
+		}
+		a{
+			text-align: center;
+		}
+		section{
+			width: 100%;
+			height: 200vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+			background-size: 400% 400%;
+			position: relative;
+			animation: change 10s ease-in-out infinite;
+		}
+		h1{
+			font-size: 5rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border: 3px solid #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -400%);
+			padding: 5rem 10rem;
+		}
+		.help{
+			letter-spacing: 2px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -55%);
+			padding: 0;
+			margin: 10%;
+			font-size: 30px;
+			list-style: none;
+		}
+		p{
+			letter-spacing: 2px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -315%);
+			padding: 5rem 10rem;
+			font-size: 30px;
+		}
+		@keyframes change {
+			0%{
+				background-position: 0 50%;
+			}
+			50%{
+				background-position: 100% 50%;
+			}
+			100%{
+				background-position: 0 50%;
+			}
+		}
+		nav{
+			display: flex;
+			padding: 2% 6%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		}
+		.nav-links{
+			flex: 1;
+			text-align: center;
+		}
+		.nav-links ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+		.nav-links ul li a{
+			color: #31BC7D;
+			text-decoration: none;
+			font-size: 25px;
+		}
+		.nav-links ul li::after{
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: #f44336;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+		.nav-links ul li:hover::after{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<body style="background-color: rgba(0, 200, 200, .5);">
+	<nav>
+			<div class="nav-links">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Ingredients.html">Ingredients</a></li>
+					<li><a href="Directions.html">Directions</a></li>
+					<li><a href="Allergy.html">Allergy</a></li>
+				</ul>
+			</div>
+		</nav>
+	<section>
+		<h1>Allergy</h1>
+		<p>The Allergys from the Muruchan Website are</p>
+		<p class="help">“The milk or dairy based ingredient found in Maruchan Yakisoba, Bowl, Instant Lunch and bagged Ramen products is lactose used in the powdered flavoring/soup base packets. An allergen statement is required as lactose is a sugar derived from milk. Lactose is present in all our products.
+
+		Other dairy ingredients include creamer substitute which contains sodium caseinate, a milk protein. This is found in Instant Lunch Creamy Chicken flavor, Ramen Creamy Chicken flavor, Bowl Spicy Miso flavor, Bowl Tom Yum flavor, and Bowl Tonkotsu flavor.
+
+		Cheese flavoring made with milk ingredients are used in Instant Lunch Cheddar Cheese flavor, Instant Lunch Jalapeno Cheddar flavor, Instant Lunch Chicken Tortilla flavor, Yakisoba Cheddar Cheese flavor, Yakisoba Four Cheese flavor, Ramen Chicken Tortilla flavor.”</p>
+
+	</section>
+
+</body>
+</html>
